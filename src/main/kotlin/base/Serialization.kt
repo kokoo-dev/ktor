@@ -1,4 +1,4 @@
-package com.kokoo
+package com.kokoo.base
 
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.server.application.*
@@ -12,11 +12,11 @@ fun Application.configureSerialization() {
         json()
     }
     routing {
-        get("/users") {
-                call.respond(User("kokoo", 30))
-            }
+        get("/examples") {
+            call.respond(Example("kokoo", true))
+        }
     }
 }
 
 @Serializable
-data class User(val name: String, val age: Int)
+data class Example(val id: String, val flag: Boolean)

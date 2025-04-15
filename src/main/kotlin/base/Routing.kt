@@ -1,4 +1,4 @@
-package com.kokoo
+package com.kokoo.base
 
 import io.ktor.server.application.*
 import io.ktor.server.response.*

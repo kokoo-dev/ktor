@@ -26,6 +26,15 @@ dependencies {
     implementation(libs.ktor.server.netty)
     implementation(libs.logback.classic)
     implementation(libs.ktor.server.config.yaml)
+
+    // test
     testImplementation(libs.ktor.server.test.host)
     testImplementation(libs.kotlin.test.junit)
+
+    // exposed
+    implementation(libs.exposed.core)
+    implementation(libs.exposed.jdbc)
+
+    // h2
+    implementation(libs.h2)
 }
