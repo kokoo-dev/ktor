@@ -9,7 +9,7 @@ import org.jetbrains.exposed.sql.transactions.experimental.newSuspendedTransacti
 import org.jetbrains.exposed.sql.transactions.transaction
 
 class UserService(
-    database: Database
+    private val database: Database
 ) {
 
     init {

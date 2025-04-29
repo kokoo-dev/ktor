@@ -37,4 +37,8 @@ dependencies {
 
     // h2
     implementation(libs.h2)
+
+    // mongodb
+    implementation(libs.mongodb.driver.core)
+    implementation(libs.mongodb.driver.sync)
 }

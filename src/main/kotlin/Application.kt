@@ -2,7 +2,8 @@ package com.kokoo
 
 import com.kokoo.base.configureRouting
 import com.kokoo.base.configureSerialization
-import com.kokoo.rdbms.configureDatabases
+import com.kokoo.mongo.configureMongo
+import com.kokoo.rdbms.configureRdbms
 import io.ktor.server.application.*
 
 fun main(args: Array<String>) {
@@ -12,5 +13,6 @@ fun main(args: Array<String>) {
 fun Application.module() {
     configureSerialization()
     configureRouting()
-    configureDatabases()
+    configureRdbms()
+    configureMongo()
 }
